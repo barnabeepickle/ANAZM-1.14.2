@@ -12,11 +12,12 @@
     ]
   },
   "contact": {
-    "homepage": "https://modrinth.com/mod/mod-menu-1.1x",
-    "issues": "https://github.com/barnabeepickle/ModMenu11x/issues"
+    "homepage": "https://github.com/barnabeepickle/ANAZM-1.14.2",
+    "sources": "https://github.com/barnabeepickle/ANAZM-1.14.2",
+    "issues": "https://github.com/barnabeepickle/ANAZM-1.14.2/issues"
   },
   "depends": {
-    "fabric-resource-loader-v0": "*",
+    "fabric-key-binding-api-v1": "*",
     "fabricloader": ">=0.6.1",
     "minecraft": "<1.15-"
   },
