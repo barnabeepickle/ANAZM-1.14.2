@@ -1,29 +1,39 @@
 {
   "schemaVersion": 1,
-  "id": "anazm",
-  "version": "${version}",
-
-  "name": "Absolutely Not A Zoom Mod",
-  "description": "This is あn exあmple description! Tell everyone whあt your mod is あbout!",
+  "id": "anazm142",
+  "name": "Absolutely Not A Zoom Mod 1.14.2 Edition",
+  "version": "$version",
+  "environment": "client",
+  "license": "MIT",
+  "icon": "assets/anazm/icon.png",
+  "entrypoints": {
+    "client": [
+      "com.github.barnabeepickle.anazm.ModMenu"
+    ]
+  },
+  "contact": {
+    "homepage": "https://modrinth.com/mod/mod-menu-1.1x",
+    "issues": "https://github.com/barnabeepickle/ModMenu11x/issues"
+  },
+  "depends": {
+    "fabric-resource-loader-v0": "*",
+    "fabricloader": ">=0.6.1",
+    "minecraft": "<1.15-"
+  },
   "authors": [
     "pkstDev"
   ],
-
-  "license": "MIT",
-  "icon": "assets/anazm/icon.png",
-
-  "environment": "client",
-  "entrypoints": {
-    "client": [
-      "committee.nova.anazm.ANAZM"
-    ]
-  },
-  "mixins": [
-    "anazm.mixins.json"
+  "contributors": [
+    "barnabeepickle"
   ],
-
-  "depends": {
-    "fabricloader": "*",
-    "fabric": "*"
+  "description": "A port of Absolutely Not A Zoom Mod to 1.14.2 for no good reason.",
+  "mixins": [
+    "mixins.modmenu.json"
+  ],
+  "custom": {
+    "modmenu:clientsideOnly": true
+  },
+  "breaks": {
+    "anazm": "*"
   }
 }
