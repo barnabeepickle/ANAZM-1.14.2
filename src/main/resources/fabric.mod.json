@@ -28,7 +28,7 @@
   ],
   "description": "A port of Absolutely Not A Zoom Mod to 1.14.2 for no good reason.",
   "mixins": [
-    "mixins.modmenu.json"
+    "mixins.anazm.json"
   ],
   "custom": {
     "modmenu:clientsideOnly": true
