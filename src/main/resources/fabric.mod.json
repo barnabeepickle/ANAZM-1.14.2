@@ -8,7 +8,7 @@
   "icon": "assets/anazm/icon.png",
   "entrypoints": {
     "client": [
-      "com.github.barnabeepickle.anazm.ModMenu"
+      "com.github.barnabeepickle.anazm.ANAZM"
     ]
   },
   "contact": {
