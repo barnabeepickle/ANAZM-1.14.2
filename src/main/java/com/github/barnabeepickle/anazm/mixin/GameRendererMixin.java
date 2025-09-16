@@ -1,6 +1,6 @@
-package committee.nova.anazm.mixin;
+package com.github.barnabeepickle.anazm.mixin;
 
-import committee.nova.anazm.ANAZM;
+import com.github.barnabeepickle.anazm.ANAZM;
 import net.minecraft.client.render.GameRenderer;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
