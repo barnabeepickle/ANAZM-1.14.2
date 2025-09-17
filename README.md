@@ -2,7 +2,7 @@
 
 ## About
 
-A port of [Absolutely Not A Zoom Mod](https://github.com/Nova-Committee/AbsolutelyNotAZoomMod) to 1.14.2 as I needed a functioning zoom mod for that version.
+A port of [Absolutely Not A Zoom Mod](https://modrinth.com/mod/anazm) to 1.14.2 as I needed a functioning zoom mod for that version.
 
 ## Dependencies
 
