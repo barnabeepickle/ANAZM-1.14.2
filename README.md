@@ -6,9 +6,13 @@ Absolutely A Zoom Mod is a port of [Absolutely Not A Zoom Mod](https://modrinth.
 
 ![Mod Menu Showcase](showcase_screenshot.png)
 
+### What do you mean by its a port of two mods
+
+This mod started out its life as a port of Absolutely Not A Zoom Mod to 1.14.2 but in the 2.0 version I used code from Logical Zoom to improve functionality so it is effecively a port of both mods.
+
 ## Dependencies
 
-Neededs [Fabric Key Binding API for 1.14.2](https://modrinth.com/mod/fabric-key-binding-api-v1-for-1.14.2) to function.
+This mod neededs [Fabric Key Binding API for 1.14.2](https://modrinth.com/mod/fabric-key-binding-api-v1-for-1.14.2) to function as a quirk of 1.14.2
 
 ## Licensing and Permissions
 
