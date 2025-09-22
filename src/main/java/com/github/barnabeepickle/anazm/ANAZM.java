@@ -14,18 +14,19 @@ public class ANAZM implements ClientModInitializer {
 	private static boolean originalSmoothCameraEnabled;
 	private static final MinecraftClient mc = MinecraftClient.getInstance();
 
-	public static final float zoomLevel = (float) 0.23;
+    public static final float zoomLevel = (float) 0.23;
 
 	@Override
 	public void onInitializeClient() {
 		zoomKeyBinding = new KeyBinding("key.anazm.zoom", InputUtil.Type.KEYSYM, GLFW.GLFW_KEY_C, "category.anazm.main");
 		
-		isZooming = false;
+        isZooming = false;
+        originalSmoothCameraEnabled = false;
 
-		KeyBindingHelper.registerKeyBinding(zoomKeyBinding);
-	}
+        KeyBindingHelper.registerKeyBinding(zoomKeyBinding);
+    }
 
-	public static boolean isZooming() {
+    public static boolean isZooming() {
         return zoomKeyBinding.isPressed();
     }
 
@@ -41,29 +42,19 @@ public class ANAZM implements ClientModInitializer {
         }
     }
 
-	 private static boolean isSmoothCamera() {
+    private static boolean isSmoothCamera() {
         return mc.options.smoothCameraEnabled;
     }
 
     private static void enableSmoothCamera() {
-        try {
-			mc.options.smoothCameraEnabled = true;
-		} catch (Exception e) {
-			System.out.println("Failed to enable smoothCamera");
-			e.printStackTrace();
-		}
+        mc.options.smoothCameraEnabled = true;
     }
 
     private static void disableSmoothCamera() {
-        try {
-			mc.options.smoothCameraEnabled = false;
-		} catch (Exception e) {
-			System.out.println("Failed to diable smoothCamera");
-			e.printStackTrace();
-		}
+        mc.options.smoothCameraEnabled = false;
     }
 
-	private static boolean zoomStarting() {
+    private static boolean zoomStarting() {
         return isZooming() && !isZooming;
     }
 
@@ -71,18 +62,16 @@ public class ANAZM implements ClientModInitializer {
         return !isZooming() && isZooming;
     }
 
-
     private static void zoomStarted() {
         originalSmoothCameraEnabled = isSmoothCamera();
         isZooming = true;
     }
 
-	private static void zoomStopped() {
+    private static void zoomStopped() {
         isZooming = false;
     }
 
-
-	private static void resetSmoothCamera() {
+    private static void resetSmoothCamera() {
         if (originalSmoothCameraEnabled) {
             enableSmoothCamera();
         } else {
