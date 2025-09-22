@@ -8,19 +8,17 @@ import net.fabricmc.api.Environment;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.ModifyVariable;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import net.minecraft.client.render.GameRenderer;
 
 @Environment(EnvType.CLIENT)
 @Mixin(GameRenderer.class)
-public abstract class GameRendererMixin {
-    @ModifyVariable(method = "getFov", at = @At(value = "RETURN", shift = At.Shift.BEFORE), ordinal = 0)
+public class GameRendererMixin {
     @Inject(method = "getFov", at = @At("RETURN"), cancellable = true)
-    public void getZoomLevel(CallbackInfoReturnable<Float> callbackInfo) {
+    public void getZoomLevel(CallbackInfoReturnable<Double> callbackInfo) {
         if(ANAZM.isZooming()) {
-            float fov = callbackInfo.getReturnValue();
+            double fov = callbackInfo.getReturnValue();
             callbackInfo.setReturnValue(fov * ANAZM.zoomLevel);
         }
 
