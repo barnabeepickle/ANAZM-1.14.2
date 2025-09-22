@@ -4,7 +4,7 @@
 
 A port of [Absolutely Not A Zoom Mod](https://modrinth.com/mod/anazm) to 1.14.2 as I needed a functioning zoom mod for that version.
 
-[Mod Menu Showcase](showcase_screenshot.png)
+![Mod Menu Showcase](showcase_screenshot.png)
 
 ## Dependencies
 
