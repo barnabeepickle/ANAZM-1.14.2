@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "anazm142",
-  "name": "Absolutely Not A Zoom Mod 1.14.2 Edition",
+  "name": "Absolutely A Zoom Mod",
   "version": "$version",
   "environment": "client",
   "license": "MIT",
@@ -22,12 +22,11 @@
     "minecraft": "<1.15-"
   },
   "authors": [
-    "pkstDev"
-  ],
-  "contributors": [
+    "pkstDev",
+    "LogcialGeekBoy",
     "barnabeepickle"
   ],
-  "description": "A port of Absolutely Not A Zoom Mod to 1.14.2 for no good reason.",
+  "description": "A port of Absolutely Not A Zoom Mod/Logical Zoom to 1.14.2 for since it doesn't actually work on that version.",
   "mixins": [
     "mixins.anazm.json"
   ],
@@ -35,6 +34,7 @@
     "modmenu:clientsideOnly": true
   },
   "breaks": {
-    "anazm": "*"
+    "anazm": "*",
+    "logical_zoom": "*"
   }
 }
