@@ -26,7 +26,7 @@
     "LogcialGeekBoy",
     "barnabeepickle"
   ],
-  "description": "A port of Absolutely Not A Zoom Mod/Logical Zoom to 1.14.2 for since it doesn't actually work on that version.",
+  "description": "A port of Absolutely Not A Zoom Mod/Logical Zoom to 1.14.2 since neither mod supported that version.",
   "mixins": [
     "mixins.anazm.json"
   ],
